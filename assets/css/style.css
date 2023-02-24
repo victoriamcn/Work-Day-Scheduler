@@ -1,14 +1,12 @@
 /* BODY */
 :root {
-  --dark: #101D29;
+  --dark: #2e364c;
   --light: snow;
   --savebtn: #154E52;
-  --past: #2e364c;
-  --present: #B99257;
-  --future: #ac9fb8;
+  --past: #ac9fb8;
+  --present: #d18e54;
+  --future: #87A6BB;
   --maroon: #63331c;
-  --antihero: #d18e54;
-  --snowonthebeach: #87A6BB;
 }
 
 body {
@@ -20,10 +18,16 @@ body {
 
 /* HEADER */
 
+header {
+  font-weight: bolder;
+}
+
 .currentDay {
-  color: var(--antihero);
+  color: var(--present);
   font-weight: bold;
 }
+
+/* Type Events */
 
 textarea {
   background: transparent;
@@ -47,8 +51,9 @@ textarea {
 }
 
 .hour {
-  background-color: var(--snowonthebeach);
-  color: var(--past);
+  background-color: var(--dark);
+  color: var(--light);
+  font-weight: bolder;
   border-top: 1px dashed var(--dark);
 }
 
@@ -59,20 +64,20 @@ textarea {
 
 .present {
   background-color: var(--present);
-  color: var(--light);
+  color: var(--dark);
 }
 
 .future {
   background-color: var(--future);
-  color: var(--light);
+  color: var(--dark);
 }
 
 .saveBtn {
-  border-left: 1px solid var(--dark);
+  border-left: 1px solid var(--savebtn);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: var(--light);
-  color: var(--savebtn);
+  background-color: var(--savebtn);
+  color: var(--light);
 }
 
 .saveBtn i:hover {
