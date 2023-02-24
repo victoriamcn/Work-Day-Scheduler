@@ -6,7 +6,13 @@ Create a simple calendar application that allows a user to save events for each 
 
 You'll need to use the [Day.js](https://day.js.org/en/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Day.js in the browser.
 
-##Table of Contents
+## Table of Contents
+[Preview](#preview)
+[Features](#features)
+[User Story](#user-story)
+[Acceptance Criteria](#acceptance-criteria)
+[License](#license)
+[Credits](#credits)
 
 ## Preview
 ![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
@@ -39,5 +45,7 @@ WHEN I refresh the page
 THEN the saved events persist
 ```
 
-The following animation demonstrates the application functionality:
+## License
+
+## Credits
 
