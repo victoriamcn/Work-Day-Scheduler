@@ -15,7 +15,7 @@ You'll need to use the [Day.js](https://day.js.org/en/) library to work with dat
 [Credits](#credits)
 
 ## Preview
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/image/05-third-party-apis-homework-demo.gif)
+![A user clicks on slots on the color-coded calendar and edits the events.](/assets/image/05-third-party-apis-homework-demo.gif)
 
 ## Features
 
