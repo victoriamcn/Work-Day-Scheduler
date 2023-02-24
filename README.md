@@ -50,10 +50,11 @@ THEN the saved events persist
 ## Credits
 
 **APIs**
-[]()
-[]()
-[]()
-[]()
+[jQuery](https://jquery.com/)
+[day.js](https://day.js.org/en/)
+[Bootstrap](https://getbootstrap.com/)
+[Google Fonts: Open Sans](https://fonts.google.com/specimen/Open+Sans?query=open+sans)
+[FontAwesome: Icons](https://fontawesome.com/)
 
 **Tutorials**
 
