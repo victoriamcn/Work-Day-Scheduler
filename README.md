@@ -7,12 +7,12 @@ Create a simple calendar application that allows a user to save events for each 
 You'll need to use the [Day.js](https://day.js.org/en/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Day.js in the browser.
 
 ## Table of Contents
-[Preview](#preview)
-[Features](#features)
-[User Story](#user-story)
-[Acceptance Criteria](#acceptance-criteria)
-[License](#license)
-[Credits](#credits)
+1. [Preview](#preview)
+2. [Features](#features)
+3. [User Story](#user-story)
+4. [Acceptance Criteria](#acceptance-criteria)
+5. [License](#license)
+6. [Credits](#credits)
 
 ## Preview
 ![A user clicks on slots on the color-coded calendar and edits the events.](/assets/image/05-third-party-apis-homework-demo.gif)
@@ -49,16 +49,25 @@ THEN the saved events persist
 
 ## Credits
 
+**Special thanks to:**
+- My instructor at Georgia Tech Coding Bootcamp, [Saurav Khatiwada
+](https://github.com/khatiwadasaurav)
+- My tutor, 
+
 **APIs**
-[jQuery](https://jquery.com/)
-[day.js](https://day.js.org/en/)
-[Bootstrap](https://getbootstrap.com/)
-[Google Fonts: Open Sans](https://fonts.google.com/specimen/Open+Sans?query=open+sans)
-[FontAwesome: Icons](https://fontawesome.com/)
+- [jQuery](https://jquery.com/)
+- [day.js](https://day.js.org/en/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Google Fonts: Open Sans](https://fonts.google.com/specimen/Open+Sans?query=open+sans)
+- [FontAwesome: Icons](https://fontawesome.com/)
 
 **Tutorials**
+- 
+- 
+- 
+- 
 
 **Inspiration**
-[Color Scheme](https://theswiftiest.com/features/heres-a-color-palette-for-the-midnights-era/)
-[Approaching JavaScript](https://codepen.io/judebloom/pen/RwGbVWB?editors=0010)
+- [Color Scheme](https://theswiftiest.com/features/heres-a-color-palette-for-the-midnights-era/)
+- [Jude Bloom](https://codepen.io/judebloom/pen/RwGbVWB?editors=0010): This codePen example helped me visualize how I needed to write my JS code.
 
