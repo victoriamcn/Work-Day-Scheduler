@@ -1,10 +1,10 @@
 /* BODY */
 :root {
   --dark: #2e364c;
-  --light: snow;
+  --light: whitesmoke;
   --savebtn: #154E52;
   --past: #ac9fb8;
-  --present: #d18e54;
+  --present: #b99257;
   --future: #87A6BB;
   --maroon: #63331c;
 }
@@ -23,8 +23,9 @@ header {
 }
 
 .currentDay {
-  color: var(--present);
+  color: var(--dark);
   font-weight: bold;
+  text-shadow: 1px 1px var(--past);
 }
 
 /* Type Events */
