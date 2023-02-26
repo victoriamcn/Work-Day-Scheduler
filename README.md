@@ -15,9 +15,11 @@ You'll need to use the [Day.js](https://day.js.org/en/) library to work with dat
 6. [Credits](#credits)
 
 ## Preview
-![A user clicks on slots on the color-coded calendar and edits the events.](/assets/image/05-third-party-apis-homework-demo.gif)
+![A user clicks on slots on the color-coded calendar and edits the events.](/assets/image/)
 
 ## Features
+1. Each hour block is color-coded based on the hour of the day.
+2. Each time block reloads, the saved events remain on the page.
 
 ## User Story
 
@@ -52,7 +54,7 @@ THEN the saved events persist
 **Special thanks to:**
 - My instructor at Georgia Tech Coding Bootcamp, [Saurav Khatiwada
 ](https://github.com/khatiwadasaurav)
-- My tutor, 
+- My tutor, Juan Delgado.
 
 **APIs**
 - [jQuery](https://jquery.com/)
@@ -62,12 +64,12 @@ THEN the saved events persist
 - [FontAwesome: Icons](https://fontawesome.com/)
 
 **Tutorials**
-- 
-- 
-- 
-- 
+- [Geeks for Geeks: How to Add or Remove Class in jQuery](https://www.geeksforgeeks.org/how-to-add-or-remove-class-in-jquery/)
+- [Digital Ocean: How To Modify Attributes Classes and Styles in the DOM](https://www.digitalocean.com/community/tutorials/how-to-modify-attributes-classes-and-styles-in-the-dom)
+- [StackOverFlow: How Can I change Elements Style Based on the Time of Day?](https://stackoverflow.com/questions/62462599/how-can-i-change-elements-style-based-on-the-time-of-day)
+- [W3Schools: split() method](https://www.w3schools.com/jsref/jsref_split.asp#:~:text=The%20split()%20method%20splits,string%20is%20split%20between%20words.)
 
 **Inspiration**
-- [Color Scheme](https://theswiftiest.com/features/heres-a-color-palette-for-the-midnights-era/)
+- [Midnights Inspired Color Scheme](https://theswiftiest.com/features/heres-a-color-palette-for-the-midnights-era/)
 - [Jude Bloom](https://codepen.io/judebloom/pen/RwGbVWB?editors=0010): This codePen example helped me visualize how I needed to write my JS code.
 
