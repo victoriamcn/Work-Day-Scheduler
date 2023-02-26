@@ -55,20 +55,14 @@ function workSchedule() {
   })
 
   //check localStorage to display data should the page reload
-  function getSavedData(hourId) {
-    // No saved data, empty return
-    if (!localStorage.getItem(hourId)) {
-      return ""
-    } else {
-      //Get data key from localStorage
+  window.onload = function() {
+    //Get data key from localStorage
     let savedUserInput = localStorage.getItem(hourId);
     //Display Input based on the time/id by adding value
-    $(this).child().attr("id").children('textarea').val() = savedUserInput;
-    } 
+    if (savedUserInput !==null) {
+      $('textarea').parent().attr("id").children('textarea').val(savedUserInput);
+    }
   }
-
-  getSavedData();
-
 
   //Current Day displayed in the Header
   var today = dayjs().format('[Today is] dddd, MMM D, YYYY');
