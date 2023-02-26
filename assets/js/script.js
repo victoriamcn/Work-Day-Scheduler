@@ -26,24 +26,29 @@ function workSchedule() {
 
   //.forEach through each id
   $('.time-block').each(function () {
-    //Id Parsed the Value of Input
+    //Grab the time-block div by the id
+    debugger
     let theHour = $(this).attr('id');
+
     //Conditional to assign past/present/future
     if (theHour < currentTime) {
       //Set PAST
       $(this).addClass('past')
       //REMOVE PRESENT and FUTURE
-      $(this).removeClass('present future')
+      $(this).removeClass('present')
+      $(this).removeClass('future')
     } else if (theHour > currentTime) {
       //Set FUTURE
       $(this).addClass('future')
       //REMOVE PAST and PRESENT
-      $(this).removeClass('present past')
+      $(this).removeClass('present')
+      $(this).removeClass( 'past')
     } else {
       //Set PRESENT
       $(this).addClass('present')
       //REMOVE PAST and FUTURE
-      $(this).removeClass('past future')
+      $(this).removeClass('past')
+      $(this).removeClass('future')
     }
     //Check the Time every Minute
     setInterval(1000 * 60);
