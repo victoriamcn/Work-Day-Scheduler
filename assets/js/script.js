@@ -19,17 +19,17 @@ function workSchedule() {
 
 
   //check localStorage to display data should the page reload
-  $(#08 .description).val(localStorage.getItem('08'));
-  $(#09 .description).val(localStorage.getItem('09'));
-  $(#10 .description).val(localStorage.getItem('10'));
-  $(#11 .description).val(localStorage.getItem('11'));
-  $(#12 .description).val(localStorage.getItem('12'));
-  $(#01 .description).val(localStorage.getItem('01'));
-  $(#02 .description).val(localStorage.getItem('02'));
-  $(#03 .description).val(localStorage.getItem('03'));
-  $(#04 .description).val(localStorage.getItem('04'));
-  $(#05 .description).val(localStorage.getItem('05'));
-  $(#06 .description).val(localStorage.getItem('06'));
+  $(#hour-08 .description).val(localStorage.getItem('hour-08'));
+  $(#hour-09 .description).val(localStorage.getItem('hour-09'));
+  $(#hour-10 .description).val(localStorage.getItem('hour-10'));
+  $(#hour-11 .description).val(localStorage.getItem('hour-11'));
+  $(#hour-12 .description).val(localStorage.getItem('hour-12'));
+  $(#hour-13 .description).val(localStorage.getItem('hour-13'));
+  $(#hour-14 .description).val(localStorage.getItem('hour-14'));
+  $(#hour-15 .description).val(localStorage.getItem('hour-15'));
+  $(#hour-16 .description).val(localStorage.getItem('hour-16'));
+  $(#hour-17 .description).val(localStorage.getItem('hour-17'));
+  $(#hour-18 .description).val(localStorage.getItem('hour-18'));
 
   function timeTracker() {
     //Sets Time asHour Increments
@@ -63,5 +63,5 @@ function workSchedule() {
       }
     })
   }
-  function timeTracker()
+  function timeTracker() //calling the function
 }
