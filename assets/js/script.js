@@ -6,13 +6,14 @@ $(window).load(workSchedule());
 
 function workSchedule() {
   // Add a listener for click events on the save button.
-  $('.saveBtn').on("click", function (e) {
-    //console.log("the click listener works")
-    preventDefault(e);
-    // set local storage key, value
+
+  $('.saveBtn').on("click", function () {
+    //console.log("the click listener works")   
+    // debugger
     let hourId = $(this).parent().attr("id") //time block ID as each key
-    let userTask = $(this).siblings("textarea").val();
-    localStorage.setItem(hourId, userTask)   
+    let userTask = $(this).siblings("textarea").val(); //value set to textarea
+    // set local storage key, value
+    localStorage.setItem(hourId, userTask)
   })
 
   //Function to apply the past, present, or future class by comparing the id to the current hour. 
@@ -53,24 +54,20 @@ function workSchedule() {
     setInterval(1000 * 60);
   })
 
-  //check localStorage in each time block to display
-  //HINT: How can the id attribute of each time-block be used to do this?
-  //  should the page reload
-  function display() {
-    //Get key from localStorage
+  //check localStorage to display data should the page reload
+  function getSavedData(hourId) {
+    // No saved data, empty return
+    if (!localStorage.getItem(hourId)) {
+      return ""
+    } else {
+      //Get data key from localStorage
     let savedUserInput = localStorage.getItem(hourId);
-    //Set the value 
-    $('.description').parent().attr("id").val() = savedUserInput;
-    $('.description').textContent = savedUserInput;
+    //Display Input based on the time/id by adding value
+    $(this).child().attr("id").children('textarea').val() = savedUserInput;
+    } 
   }
 
-display();
-
-  // $('schedulecontatiner').on("load", function () {
-  //   // 8am
-  //   var hourEight = localStorage.getItem('hour-8') / console.log(hourEight)
-  //   $('hour-8').child("textarea").innerHTML(hourEight) //search id of div that we want. parent traverse(). text add a value
-
+  getSavedData();
 
 
   //Current Day displayed in the Header
