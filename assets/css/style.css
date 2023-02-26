@@ -60,7 +60,7 @@ textarea {
 
 .past {
   background-color: var(--past);
-  color:var(--light);
+  color:var(--dark);
 }
 
 .present {

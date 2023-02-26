@@ -1,4 +1,5 @@
-
+//Sets Time asHour Increments
+let currentTime = dayjs().hour()
 //START WORKING CODE
 //call to jQuery to ensure that the code isn't run until the browser has finished rendering all the elements in the html
 $(window).load(workSchedule());
@@ -22,12 +23,9 @@ function workSchedule() {
   // let getId = $('textarea')[i].attr('id')
   //Remove Other Time Classes
   // $('textarea').attr('id').removeClass('.present .past .future');
-  
+
   //.forEach through each id
   $('.time-block').each(function () {
-
-    //Grabs the current hour
-    let currentTime = dayjs().hour()
     //Id Parsed the Value of Input
     let theHour = $(this).attr('id');
     //Conditional to assign past/present/future
@@ -63,28 +61,28 @@ function workSchedule() {
   // }
 
 
-// Part 3:  TODO: Add code to get any user input that was saved in localStorage and set the values of the corresponding textarea elements. 
-//HINT: How can the id attribute of each time-block be used to do this?
+  // Part 3:  TODO: Add code to get any user input that was saved in localStorage and set the values of the corresponding textarea elements. 
+  //HINT: How can the id attribute of each time-block be used to do this?
 
-// var savedInput = $("timeblock").child("textarea").attr("id");
-// savedInput.value = localStorage.getItem(hourId)
+  // var savedInput = $("timeblock").child("textarea").attr("id");
+  // savedInput.value = localStorage.getItem(hourId)
 
-// let cancel;
-// savedInput.addEventListener("keyup", event => {
-//   if (cancel) clearTimeout(cancel)
-//   cancel = setTimeout(() => {
-//     localStorage.setItem("notes", event.target.value)
-//   }, 1000)
-// })
-//check localStorage in each time block  to display should the page reload
-// $('schedulecontatiner').on( "load", function() {
-// // 8am
-// var hourEight = localStorage.getItem('hour-8') /  console.log(hourEight)
-// $('hour-8').child("textarea").innerHTML(hourEight) //search id of div that we want. parent traverse(). text add a value
+  // let cancel;
+  // savedInput.addEventListener("keyup", event => {
+  //   if (cancel) clearTimeout(cancel)
+  //   cancel = setTimeout(() => {
+  //     localStorage.setItem("notes", event.target.value)
+  //   }, 1000)
+  // })
+  //check localStorage in each time block  to display should the page reload
+  // $('schedulecontatiner').on( "load", function() {
+  // // 8am
+  // var hourEight = localStorage.getItem('hour-8') /  console.log(hourEight)
+  // $('hour-8').child("textarea").innerHTML(hourEight) //search id of div that we want. parent traverse(). text add a value
 
 
 
-//Current Day displayed in the Header
-var today = dayjs().format('[Today is] dddd, MMM D, YYYY');
-$('#currentDay').text(today)
+  //Current Day displayed in the Header
+  var today = dayjs().format('[Today is] dddd, MMM D, YYYY');
+  $('#currentDay').text(today)
 };
