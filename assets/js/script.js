@@ -30,16 +30,16 @@ function workSchedule() {
   $(#04 .description).val(localStorage.getItem('04'));
   $(#05 .description).val(localStorage.getItem('05'));
   $(#06 .description).val(localStorage.getItem('06'));
-  
+
   function timeTracker() {
     //Sets Time asHour Increments
-    let currentTime = dayjs().hour()
+    let currentTime = moment().hour()
 
     //Loop through each id
     $('.time-block').each(function () {
 
       //Grab the time-block div by the id
-      let theHourEl = $(this).attr('id').split('hour')[1];
+      let theHourEl = parseInt($(this).attr('id').split('hour')[1]);
 
       //Conditional to assign past/present/future
       if (theHourEl < currentTime) {
@@ -63,4 +63,5 @@ function workSchedule() {
       }
     })
   }
+  function timeTracker()
 }
