@@ -54,17 +54,17 @@ function workSchedule() {
     setInterval(1000 * 60);
   })
 
-  //check localStorage to display data should the page reload
-  window.onload = function() {
-    //Get data key from localStorage
-    let savedUserInput = localStorage.getItem(hourId);
-    //Display Input based on the time/id by adding value
-    if (savedUserInput !==null) {
-      $('textarea').parent().attr("id").children('textarea').val(savedUserInput);
-    }
-  }
-
   //Current Day displayed in the Header
   var today = dayjs().format('[Today is] dddd, MMM D, YYYY');
   $('#currentDay').text(today)
+}
+
+//check localStorage to display data should the page reload
+window.onload = function() {
+  //Get data key from localStorage
+  let savedUserInput = localStorage.getItem(hourId);
+  //Display Input based on the time/id by adding value
+  if (savedUserInput !==null) {
+    $('textarea').parent().attr("id").children('textarea').val(savedUserInput);
+  }
 }
