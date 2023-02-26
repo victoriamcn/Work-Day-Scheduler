@@ -18,33 +18,33 @@ function workSchedule() {
   })
 
   function timeColor() {
-    //Gets Time Accepts numbers from 0 to 23
-    let currentTime = dayjs().hour()
+    //Gets Time: Accepts numbers from 0 to 23
+    let currentTime = dayjs().hour();
 
     //Loop through each id
     $('.time-block').each(function () {
-
       //Grab the time-block div by the id
-      let theHourEl = parseInt($(this).attr('id'));
+      let hourBlock = parseInt($(this).attr('id').split("hour-")[1]);
 
-      //Conditional to assign past/present/future
-      if (theHourEl < currentTime) {
+      //Conditional to assign or remove classes past/present/future
+      if (hourBlock < currentTime) {
         //Set PAST
         $(this).addClass('past')
         //REMOVE PRESENT and FUTURE
         $(this).removeClass('present')
         $(this).removeClass('future')
-      } else if (theHourEl > currentTime) {
+      } else if (hourBlock > currentTime) {
+        //REMOVE PAST and PRESENT
+        $(this).removeClass('past')
+        $(this).removeClass('present')
         //Set FUTURE
         $(this).addClass('future')
-        //REMOVE PAST and PRESENT
-        $(this).removeClass('present')
-        $(this).removeClass('past')
       } else {
+        //REMOVE PAST and FUTURE
+        $(this).removeClass('past')
         //Set PRESENT
         $(this).addClass('present')
         //REMOVE PAST and FUTURE
-        $(this).removeClass('past')
         $(this).removeClass('future')
       }
     })
