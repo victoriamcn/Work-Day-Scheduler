@@ -15,7 +15,7 @@ You'll need to use the [Day.js](https://day.js.org/en/) library to work with dat
 6. [Credits](#credits)
 
 ## Preview
-![A user clicks on slots on the color-coded calendar and edits the events.](/assets/image/)
+![Picture of a color-coded calendar.](/assets/image/workdayschedprev.png)
 
 ## Features
 1. Each hour block is color-coded based on the hour of the day.
