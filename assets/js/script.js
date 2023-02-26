@@ -19,27 +19,40 @@ function workSchedule() {
 
 
   //check localStorage to display data should the page reload
-  $(#hour-08 .description).val(localStorage.getItem('hour-08'));
-  $(#hour-09 .description).val(localStorage.getItem('hour-09'));
-  $(#hour-10 .description).val(localStorage.getItem('hour-10'));
-  $(#hour-11 .description).val(localStorage.getItem('hour-11'));
-  $(#hour-12 .description).val(localStorage.getItem('hour-12'));
-  $(#hour-13 .description).val(localStorage.getItem('hour-13'));
-  $(#hour-14 .description).val(localStorage.getItem('hour-14'));
-  $(#hour-15 .description).val(localStorage.getItem('hour-15'));
-  $(#hour-16 .description).val(localStorage.getItem('hour-16'));
-  $(#hour-17 .description).val(localStorage.getItem('hour-17'));
-  $(#hour-18 .description).val(localStorage.getItem('hour-18'));
+  function inCaseReload() {
+    // loop
+    $('.hour').each(function (){
+      //define
+      let currentHour = (this).text();
+      let currentInput = localStorage.getItem(currentHour)
+      //conditional
+      if (currentInput !== null) {
+        $(this).siblings('.description').val(currentInput)
+      }
+    })
+  }
 
-  function timeTracker() {
-    //Sets Time asHour Increments
-    let currentTime = moment().hour()
+  // $(#hour-08 .description).val(localStorage.getItem('hour-08'));
+  // $(#hour-09 .description).val(localStorage.getItem('hour-09'));
+  // $(#hour-10 .description).val(localStorage.getItem('hour-10'));
+  // $(#hour-11 .description).val(localStorage.getItem('hour-11'));
+  // $(#hour-12 .description).val(localStorage.getItem('hour-12'));
+  // $(#hour-13 .description).val(localStorage.getItem('hour-13'));
+  // $(#hour-14 .description).val(localStorage.getItem('hour-14'));
+  // $(#hour-15 .description).val(localStorage.getItem('hour-15'));
+  // $(#hour-16 .description).val(localStorage.getItem('hour-16'));
+  // $(#hour-17 .description).val(localStorage.getItem('hour-17'));
+  // $(#hour-18 .description).val(localStorage.getItem('hour-18'));
+
+  function timeColor() {
+    //Gets Time Accepts numbers from 0 to 23
+    let currentTime = dayjs().hour()
 
     //Loop through each id
     $('.time-block').each(function () {
 
       //Grab the time-block div by the id
-      let theHourEl = parseInt($(this).attr('id').split('hour')[1]);
+      let theHourEl = parseInt($(this).attr('id'));
 
       //Conditional to assign past/present/future
       if (theHourEl < currentTime) {
@@ -63,5 +76,6 @@ function workSchedule() {
       }
     })
   }
-  function timeTracker() //calling the function
+  function timeColor() //calling the timeColor function
+  function inCaseReload() //calling the inCaseReload function
 }
