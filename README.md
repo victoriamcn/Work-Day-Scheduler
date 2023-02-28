@@ -8,14 +8,19 @@ You'll need to use the [Day.js](https://day.js.org/en/) library to work with dat
 
 ## Table of Contents
 1. [Preview](#preview)
-2. [Features](#features)
-3. [User Story](#user-story)
-4. [Acceptance Criteria](#acceptance-criteria)
-5. [License](#license)
-6. [Credits](#credits)
+2. [Deployed Application](#deployed-application)
+3. [Features](#features)
+4. [User Story](#user-story)
+5. [Acceptance Criteria](#acceptance-criteria)
+6. [License](#license)
+7. [Credits](#credits)
 
 ## Preview
 ![Picture of a color-coded calendar.](/assets/image/workdayschedprev.png)
+
+## Deployed Application
+
+[Work Day Sceduler Site] (https://victoriamcn.github.io/Work-Day-Scheduler/)
 
 ## Features
 1. Each hour block is color-coded based on the hour of the day.
