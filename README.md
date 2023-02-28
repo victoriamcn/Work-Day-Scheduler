@@ -20,7 +20,7 @@ You'll need to use the [Day.js](https://day.js.org/en/) library to work with dat
 
 ## Deployed Application
 
-[Work Day Sceduler Site] (https://victoriamcn.github.io/Work-Day-Scheduler/)
+https://victoriamcn.github.io/Work-Day-Scheduler/
 
 ## Features
 1. Each hour block is color-coded based on the hour of the day.
@@ -53,6 +53,8 @@ THEN the saved events persist
 ```
 
 ## License
+
+Please review in license folder.
 
 ## Credits
 
